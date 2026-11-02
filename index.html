@@ -1,12 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Marc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Marc Dolder, étudiant développeur informatique au CESI Lingolsheim.">
+  <title>Marc Dolder — Développeur informatique</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenue sur mon portfolio !</h1>
-    <p>Mon site est en construction.</p>
+  <!-- En-tête fixe : identité du portfolio et navigation entre les sections. -->
+  <header class="topbar">
+    <a class="identity" href="#accueil" aria-label="Accueil">
+      <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Marc_Dolder</span><span class="cursor">_</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#accueil"><span>01.</span> Accueil</a>
+      <a href="#a-propos"><span>02.</span> À propos</a>
+      <a href="#competences"><span>03.</span> Compétences</a>
+      <a href="#projets"><span>04.</span> Projets</a>
+      <a href="#parcours"><span>05.</span> Parcours</a>
+      <a href="#contact"><span>06.</span> Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contenu principal découpé en sections ciblables par les liens du menu. -->
+  <main>
+    <!-- Présentation rapide, disponibilité et appel à l'action. -->
+    <section id="accueil" class="hero page-section">
+      <div class="section-marker" aria-hidden="true"><span>01</span><i></i></div>
+      <div class="hero-copy">
+        <p class="kicker">// Étudiant développeur</p>
+        <h1>Marc Dolder<span>_</span></h1>
+        <p class="role">Bachelor Développeur informatique<br>CESI Lingolsheim</p>
+        <p class="intro">Passionné par la conception de solutions, je recherche un stage de 4 mois à partir de <strong>mai 2027</strong>, de préférence dans le secteur privé.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projets">Voir mes projets <span>→</span></a>
+          <a class="button secondary" href="#contact">Me contacter <span>↗</span></a>
+        </div>
+      </div>
+
+      <aside class="status-window profile-window" aria-label="Résumé du profil">
+        <div class="window-titlebar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>profil.json</span>
+          <span class="file-state">lecture seule</span>
+        </div>
+        <div class="profile-code" aria-label="Informations principales">
+          <span class="line-number">01</span><span class="brace">{</span>
+          <span class="line-number">02</span><p><b>"formation"</b>: <em>"Bachelor · CESI"</em>,</p>
+          <span class="line-number">03</span><p><b>"disponible"</b>: <em>"mai 2027"</em>,</p>
+          <span class="line-number">04</span><p><b>"durée"</b>: <em>"4 mois"</em>,</p>
+          <span class="line-number">05</span><p><b>"recherche"</b>: <em>"stage · secteur privé"</em>,</p>
+          <span class="line-number">06</span><p><b>"intérêts"</b>: [</p>
+          <span class="line-number">07</span><p class="code-indent"><em>"web"</em>, <em>"logiciel"</em>, <em>"IA locale"</em></p>
+          <span class="line-number">08</span><p>]</p>
+          <span class="line-number">09</span><span class="brace">}</span>
+        </div>
+        <a class="profile-link" href="#projets"><span>&gt;</span> explorer_les_projets()<i>→</i></a>
+      </aside>
+    </section>
+
+    <!-- Parcours personnel et motivation du candidat. -->
+    <section id="a-propos" class="page-section content-section">
+      <div class="section-marker" aria-hidden="true"><span>02</span><i></i></div>
+      <div class="section-heading"><p class="kicker">01. À propos de moi</p><h2>Concevoir, comprendre,<br><span>progresser.</span></h2></div>
+      <div class="about-grid">
+        <p class="statement">Le développement me plaît pour sa dimension créative : imaginer une solution, la structurer et la rendre réellement utile.</p>
+        <div class="body-copy"><p>Je suis étudiant en Bachelor Développeur informatique au CESI de Lingolsheim. J'aime découvrir de nouvelles méthodes, rencontrer des personnes aux profils différents et comprendre leur manière de travailler.</p><p>Après une première expérience de deux mois à la DISP Strasbourg, je souhaite découvrir le fonctionnement d'une entreprise privée et continuer à développer mes compétences.</p></div>
+      </div>
+    </section>
+
+    <!-- Compétences techniques, outils et méthodes déjà pratiquées. -->
+    <section id="competences" class="page-section content-section section-tinted">
+      <div class="section-marker" aria-hidden="true"><span>03</span><i></i></div>
+      <div class="section-heading"><p class="kicker">02. Compétences</p><h2>Une base solide,<br><span>toujours en évolution.</span></h2></div>
+      <div class="skills-grid skills-enhanced">
+        <article class="skill-card front-skill"><span class="skill-index">01</span><div class="skill-icon" aria-hidden="true">&lt;/&gt;</div><h3>Front-end</h3><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        <article class="skill-card back-skill"><span class="skill-index">02</span><div class="skill-icon" aria-hidden="true">{ }</div><h3>Back-end</h3><div class="tech-list"><span>PHP</span><span>Python</span><span>C#</span></div></article>
+        <article class="skill-card app-skill"><span class="skill-index">03</span><div class="skill-icon" aria-hidden="true">APP</div><h3>Applications</h3><div class="tech-list"><span>.NET MAUI</span><span>XAML</span></div></article>
+        <article class="skill-card data-skill"><span class="skill-index">04</span><div class="skill-icon" aria-hidden="true">DB</div><h3>Données</h3><div class="tech-list"><span>SQL</span><span>PDO</span></div></article>
+        <article class="skill-card version-skill"><span class="skill-index">05</span><div class="skill-icon" aria-hidden="true">git</div><h3>Versioning</h3><div class="tech-list"><span>Git</span><span>GitHub</span></div></article>
+        <article class="skill-card environment-skill"><span class="skill-index">06</span><div class="skill-icon" aria-hidden="true">□</div><h3>Environnement</h3><div class="tech-list"><span>Docker</span><span>Docker Compose</span></div></article>
+      </div>
+      <div class="methods-strip">
+        <div><span class="methods-label">Méthodes &amp; concepts</span><p>Ce que j'ai déjà mis en pratique dans mes projets.</p></div>
+        <ul>
+          <li>POO</li><li>MVVM</li><li>Logique métier</li><li>Travail collaboratif</li><li>Respect d'une architecture existante</li><li class="learning-method">Architecture hexagonale <small>en apprentissage</small></li>
+        </ul>
+      </div>    </section>
+
+    <!-- Études de cas : chaque projet présente son contexte, sa stack et ses visuels. -->
+    <section id="projets" class="page-section content-section">
+      <div class="section-marker" aria-hidden="true"><span>04</span><i></i></div>
+      <div class="section-heading projects-heading"><div><p class="kicker">03. Projets sélectionnés</p><h2>Des idées<br><span>mises en pratique.</span></h2></div><p>Deux projets qui montrent ma manière d'apprendre, de structurer une solution et de résoudre un problème.</p></div>
+      <div class="project-showcase">
+        <article class="case-study case-study-stt">
+          <div class="case-topline"><span>01</span><span>Stage · DISP Strasbourg</span><span>Projet principal</span></div>
+          <div class="case-layout">
+            <div class="case-copy">
+              <p class="project-type">Python · IA locale · traitement audio</p>
+              <h3>Compte rendu de réunion par IA locale</h3>
+              <p class="case-lead">Un outil sans interface graphique capable de lancer un enregistrement audio, de retranscrire la voix localement puis de générer un résumé exploitable de la réunion.</p>
+              <div class="case-facts">
+                <div><span>Ma mission</span><p>Développer l'ensemble de l'application à partir d'une architecture fournie, en respectant sa séparation en composants et son fonctionnement local.</p></div>
+                <div><span>Enjeu</span><p>Automatiser la production d'un compte rendu tout en gardant le traitement audio et l'IA sur la machine.</p></div>
+              </div>
+              <div class="case-actions"><a class="project-link" href="https://github.com/marc19555/stt_app" target="_blank" rel="noreferrer">Voir le dépôt GitHub <span>↗</span></a></div>
+            </div>
+            <div class="pipeline" aria-label="Fonctionnement du projet de transcription">
+              <div><span>01</span><strong>Enregistrement</strong><small>Capture de la réunion</small></div><i>→</i>
+              <div><span>02</span><strong>Traitement audio</strong><small>Préparation des fichiers</small></div><i>→</i>
+              <div><span>03</span><strong>Transcription locale</strong><small>Voix vers texte</small></div><i>→</i>
+              <div><span>04</span><strong>Résumé</strong><small>Compte rendu exploitable</small></div>
+            </div>
+          </div>
+          <div class="tags case-tags"><span class="tag-back">Python</span><span class="tag-app">IA locale</span><span class="tag-data">Audio</span><span class="tag-environment">Docker</span><span class="tag-method">Architecture imposée</span></div>
+        </article>
+
+        <article class="case-study case-study-sport">
+          <div class="case-topline"><span>02</span><span>Projet collaboratif · Cours</span><span>Responsable gestion d'équipe</span></div>
+          <div class="case-layout sport-layout">
+            <div class="case-copy">
+              <p class="project-type">C# · .NET MAUI · MVVM</p>
+              <h3>SportManager OO</h3>
+              <p class="case-lead">Une application de gestion sportive développée en équipe dans le cadre d'un projet de cours.</p>
+              <div class="case-facts">
+                <div><span>Ma contribution</span><p>Gestion des équipes : recrutement, modification et suppression des joueurs.</p></div>
+                <div><span>Logique métier</span><p>Conception du calcul de puissance d'une équipe à partir des aptitudes de chaque joueur et de son poste.</p></div>
+              </div>
+              <div class="case-actions"><a class="project-link" href="https://github.com/marc19555/SportManagerOO" target="_blank" rel="noreferrer">Voir le dépôt GitHub <span>↗</span></a></div>
+            </div>
+            <figure class="featured-shot"><img src="assets/projects/sportmanager-team.png" alt="Écran de gestion des joueurs et du score d'une équipe dans SportManager"><figcaption>Gestion des joueurs et calcul du score d'équipe</figcaption></figure>
+          </div>
+          <div class="project-gallery">
+            <figure class="home-shot"><img src="assets/projects/sportmanager-home.png" alt="Accueil de l'application SportManager" loading="lazy"><figcaption>Navigation principale</figcaption></figure>
+            <figure><img src="assets/projects/sportmanager-teams.png" alt="Liste des équipes et de leurs scores" loading="lazy"><figcaption>Liste et score des équipes</figcaption></figure>
+            <figure><img src="assets/projects/sportmanager-player.png" alt="Modification d'un joueur et graphique de ses aptitudes" loading="lazy"><figcaption>Modification et aptitudes d'un joueur</figcaption></figure>
+          </div>
+          <div class="tags case-tags"><span class="tag-back">C#</span><span class="tag-app">.NET MAUI</span><span class="tag-method">MVVM</span><span class="tag-method">POO</span><span class="tag-method">Travail en équipe</span></div>
+        </article>
+
+      </div>
+      <p class="repository-note">Note : <strong>openhuman</strong> est un fork et n'est pas présenté comme un projet personnel.</p>
+    </section>
+
+    <!-- Chronologie des expériences et prochaine étape recherchée. -->
+    <section id="parcours" class="page-section content-section section-tinted">
+      <div class="section-marker" aria-hidden="true"><span>05</span><i></i></div>
+      <div class="section-heading"><p class="kicker">04. Parcours</p><h2>Un parcours en cours<br><span>de construction.</span></h2></div>
+      <div class="timeline">
+        <article><time>2024 — aujourd'hui</time><div><h3>Bachelor Développeur informatique</h3><p>CESI · Lingolsheim</p></div></article>
+        <article><time>2026</time><div><h3>Stage de 2 mois</h3><p>DISP Strasbourg · projet de transcription IA locale</p></div></article>
+        <article class="next"><time>Mai 2027</time><div><h3>Stage recherché · 4 mois</h3><p>Développement informatique · secteur privé de préférence</p></div></article>
+      </div>
+    </section>
+
+    <!-- Coordonnées et liens de contact. -->
+    <section id="contact" class="page-section contact-section">
+      <div class="section-marker" aria-hidden="true"><span>06</span><i></i></div>
+      <div class="contact-intro"><p class="kicker">05. Contact</p><h2>Construisons quelque chose<br><span>d'utile.</span></h2><p>Une opportunité de stage, un projet ou simplement une question ? Écrivez-moi directement.</p></div>
+      <div class="contact-panel">
+        <a href="mailto:marc19dolder@gmail.com"><span>E-mail</span><strong>marc19dolder@gmail.com</strong><i>↗</i></a>
+        <a href="https://github.com/marc19555" target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/marc19555</strong><i>↗</i></a>
+        <a href="https://www.linkedin.com/in/marc-dolder-475894373/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/marc-dolder-475894373</strong><i>↗</i></a>
+        <a class="pending" href="Cv Marc Dolder Stage.pdf" download="CV-Marc-Dolder.pdf"><span>CV</span><strong>Télécharger mon CV</strong><i>↓</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Marc Dolder</span><span>Portfolio conçu et développé avec soin.</span><a href="#accueil">Retour en haut ↑</a></footer>
+  <!-- Lightbox réutilisée par toutes les captures de projets. -->
+  <dialog class="lightbox" aria-label="Aperçu agrandi du projet">
+    <button class="lightbox-close" type="button" aria-label="Fermer l'aperçu">×</button>
+    <div class="lightbox-frame"><img src="" alt=""><p></p></div>
+  </dialog>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
